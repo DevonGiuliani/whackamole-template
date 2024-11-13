@@ -28,38 +28,32 @@ def main():
                     for n in range(0,17):
                         if ((pygame.mouse.get_pos() == (xPos+12-n, yPos+12))):
                             xPos = random.randint(0,19)*32 + 4
-                            yPos = random.randint(0, 16)*32 + 4
-                            screen.blit(mole_image, mole_image.get_rect(topleft=(xPos, yPos)))
+                            yPos = random.randint(0, 15)*32 + 4
                             firstHit = True
                         for m in range(0,17):
                             if ((pygame.mouse.get_pos() == (xPos+12-n, yPos+12-m))):
                                 xPos = random.randint(0,19)*32 + 4
-                                yPos = random.randint(0, 16)*32 + 4
-                                screen.blit(mole_image, mole_image.get_rect(topleft=(xPos, yPos)))
+                                yPos = random.randint(0, 15)*32 + 4
                                 firstHit = True
                         for m in range(0,17):
                             if ((pygame.mouse.get_pos() == (xPos+12-n, yPos+12+m))):
                                 xPos = random.randint(0,19)*32 + 4
-                                yPos = random.randint(0, 16)*32 + 4
-                                screen.blit(mole_image, mole_image.get_rect(topleft=(xPos, yPos)))
+                                yPos = random.randint(0, 15)*32 + 4
                                 firstHit = True
                     for n in range(0, 17):
                         if ((pygame.mouse.get_pos() == (xPos + 12 + n, yPos + 12))):
                             xPos = random.randint(0, 19) * 32 + 4
-                            yPos = random.randint(0, 16) * 32 + 4
-                            screen.blit(mole_image, mole_image.get_rect(topleft=(xPos, yPos)))
+                            yPos = random.randint(0, 15) * 32 + 4
                             firstHit = True
                         for m in range(0, 17):
                             if ((pygame.mouse.get_pos() == (xPos + 12 + n, yPos + 12 - m))):
                                 xPos = random.randint(0, 19) * 32 + 4
-                                yPos = random.randint(0, 16) * 32 + 4
-                                screen.blit(mole_image, mole_image.get_rect(topleft=(xPos, yPos)))
+                                yPos = random.randint(0, 15) * 32 + 4
                                 firstHit = True
                         for m in range(0, 17):
                             if ((pygame.mouse.get_pos() == (xPos + 12 + n, yPos + 12 + m))):
                                 xPos = random.randint(0, 19) * 32 + 4
-                                yPos = random.randint(0, 16) * 32 + 4
-                                screen.blit(mole_image, mole_image.get_rect(topleft=(xPos, yPos)))
+                                yPos = random.randint(0, 15) * 32 + 4
                                 firstHit = True
             else:
                 screen.blit(mole_image, mole_image.get_rect(topleft=(xPos, yPos)))
@@ -67,33 +61,27 @@ def main():
                     for n in range(0, 9):
                         if ((pygame.mouse.get_pos() == (xPos + 12 - n, yPos + 12))):
                             xPos = random.randint(0, 19) * 32 + 4
-                            yPos = random.randint(0, 16) * 32 + 4
-                            screen.blit(mole_image, mole_image.get_rect(topleft=(xPos, yPos)))
+                            yPos = random.randint(0, 15) * 32 + 4
                         for m in range(0, 9):
                             if ((pygame.mouse.get_pos() == (xPos + 12 -n , yPos + 12 - m))):
                                 xPos = random.randint(0, 19) * 32 + 4
-                                yPos = random.randint(0, 16) * 32 + 4
-                                screen.blit(mole_image, mole_image.get_rect(topleft=(xPos, yPos)))
+                                yPos = random.randint(0, 15) * 32 + 4
                         for m in range(0, 9):
                             if ((pygame.mouse.get_pos() == (xPos + 12 - n, yPos + 12 + m))):
                                 xPos = random.randint(0, 19) * 32 + 4
-                                yPos = random.randint(0, 16) * 32 + 4
-                                screen.blit(mole_image, mole_image.get_rect(topleft=(xPos, yPos)))
+                                yPos = random.randint(0, 15) * 32 + 4
                     for n in range(0, 9):
                         if ((pygame.mouse.get_pos() == (xPos + 12 + n, yPos + 12))):
                             xPos = random.randint(0, 19) * 32 + 4
-                            yPos = random.randint(0, 16) * 32 + 4
-                            screen.blit(mole_image, mole_image.get_rect(topleft=(xPos, yPos)))
+                            yPos = random.randint(0, 15) * 32 + 4
                         for m in range(0, 9):
                             if ((pygame.mouse.get_pos() == (xPos + 12 + n, yPos + 12 - m))):
                                 xPos = random.randint(0, 19) * 32 + 4
-                                yPos = random.randint(0, 16) * 32 + 4
-                                screen.blit(mole_image, mole_image.get_rect(topleft=(xPos, yPos)))
+                                yPos = random.randint(0, 15) * 32 + 4
                         for m in range(0, 9):
                             if ((pygame.mouse.get_pos() == (xPos + 12 + n, yPos + 12 + m))):
                                 xPos = random.randint(0, 19) * 32 + 4
-                                yPos = random.randint(0, 16) * 32 + 4
-                                screen.blit(mole_image, mole_image.get_rect(topleft=(xPos, yPos)))
+                                yPos = random.randint(0, 15) * 32 + 4
             pygame.display.flip()
             clock.tick(60)
     finally:
